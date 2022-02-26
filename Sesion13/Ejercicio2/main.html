@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bienvenidos a Copia y Gana</h1>
+  <p>El juego consiste en adivinar las coordenadas del lugar entre las tres opciones mostradas. La manera de seleccionar respuesta es copiando las coordenadas.</p>
+
+  <div id="image">
+    <img src="https://www.vivaperutours.com/es/wp-content/uploads/2016/08/machu-picchu-peru.jpg" alt="Machu-Picchu">
+  </div>
+  
+  <h2>Opciones:</h2>
+  <ol>
+    <li id="option1">Opción 1: 43°12'39"O y 22°57'6"S</li>
+    <li id="option2">Opción 2: 72°30'0.58"O y 13°12'5.29"S</li>
+    <li id="option3">Opción 3: 78°2'32"E y 27°10'27"N</li>
+  </ol>
+
+  <script>
+    const option1 = document.getElementById("option1");
+    const option2 = document.getElementById("option2");
+    const option3 = document.getElementById("option3");
+
+    option1.addEventListener('copy', () => alert("Opción incorrecta!"));
+    option2.addEventListener('copy', () => alert("Opción correcta!"));
+    option3.addEventListener('copy', () => alert("Opción incorrecta!"));
+  </script>
+</body>
+</html>

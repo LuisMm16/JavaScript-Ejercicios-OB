@@ -1,0 +1,16 @@
+#midiv{
+  background-color: #a0b0c5;
+  height: 300px;
+  width: 400px;
+}
+
+body {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
